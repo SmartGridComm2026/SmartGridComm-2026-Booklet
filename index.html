@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartGridComm 2026 Booklet</title>
+<meta name="description" content="Digital conference booklet for IEEE SmartGridComm 2026, 26–29 October 2026, College Station, Texas.">
+<link rel="icon" href="sgc-logo.svg">
+<style>
+  :root {
+    --navy: #002855; --blue: #00629B; --teal: #0B8EAE; --cyan: #00B5E2;
+    --ink: #191919; --gray: #5B6670; --tint: #E8F3F8; --bg: #F5F8FA; --card: #fff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ink); background: var(--bg); line-height: 1.5;
+  }
+  header {
+    color: #fff; text-align: center; padding: 40px 16px 36px;
+    background:
+      url("network-pattern.svg") center / cover no-repeat,
+      linear-gradient(165deg, var(--navy) 0%, var(--blue) 62%, var(--teal) 100%);
+  }
+  header img { width: min(420px, 86vw); height: auto; display: block; margin: 0 auto 14px; }
+  header .eyebrow { letter-spacing: .2em; text-transform: uppercase; font-size: .8rem; font-weight: 700; opacity: .9; }
+  header .when { font-size: 1.25rem; font-weight: 700; margin-top: 6px; }
+  header .where { opacity: .92; }
+
+  main { max-width: 880px; margin: -18px auto 0; padding: 0 16px 40px; }
+  .card {
+    background: var(--card); border-radius: 14px; box-shadow: 0 2px 14px rgba(0, 40, 85, .1);
+    padding: 24px; display: grid; grid-template-columns: 260px 1fr; gap: 28px; align-items: center;
+  }
+  .cover { display: block; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 18px rgba(0, 0, 0, .18); }
+  .cover img { display: block; width: 100%; height: auto; }
+  h1 { font-size: 1.7rem; color: var(--navy); line-height: 1.2; margin-bottom: 8px; }
+  .lede { color: var(--gray); margin-bottom: 18px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 700; border-radius: 8px;
+    padding: 11px 18px; border: 2px solid var(--blue);
+  }
+  .btn.primary { background: var(--blue); color: #fff; }
+  .btn.ghost { color: var(--blue); background: #fff; }
+  .btn:hover { filter: brightness(1.08); }
+  ul.inside { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; font-size: .95rem; }
+  ul.inside li::before { content: "▸ "; color: var(--teal); }
+
+  .links { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .links a {
+    display: block; text-decoration: none; color: inherit; background: var(--card);
+    border-radius: 12px; padding: 16px 18px; border-left: 4px solid var(--cyan);
+    box-shadow: 0 1px 8px rgba(0, 40, 85, .08);
+  }
+  .links b { color: var(--navy); display: block; }
+  .links span { color: var(--gray); font-size: .92rem; }
+  footer { text-align: center; color: var(--gray); font-size: .85rem; padding: 0 16px 32px; }
+
+  @media (max-width: 640px) {
+    .card { grid-template-columns: 1fr; padding: 18px; }
+    .cover { max-width: 240px; margin: 0 auto; }
+    h1 { font-size: 1.45rem; text-align: center; }
+    .lede { text-align: center; }
+    .btns { justify-content: center; }
+    .btn { flex: 1 1 100%; text-align: center; }
+    ul.inside, .links { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="sgc-logo-white.svg" alt="IEEE SmartGridComm">
+  <div class="eyebrow">Conference Booklet</div>
+  <div class="when">26–29 October 2026</div>
+  <div class="where">Texas A&amp;M Hotel &amp; Conference Center · College Station, Texas</div>
+</header>
+
+<main>
+  <section class="card">
+    <a class="cover" href="booklet.pdf"><img src="cover.png" alt="Booklet cover" width="510" height="788"></a>
+    <div>
+      <h1>SmartGridComm 2026 Digital Booklet</h1>
+      <p class="lede">Everything you need for the conference in one PDF.</p>
+      <div class="btns">
+        <a class="btn primary" href="booklet.pdf">Open the booklet</a>
+        <a class="btn ghost" href="booklet.pdf" download="SmartGridComm2026-Booklet.pdf">Download PDF</a>
+      </div>
+      <ul class="inside">
+        <li>WiFi &amp; essentials</li>
+        <li>Welcome letters</li>
+        <li>Program at a glance</li>
+        <li>Keynotes &amp; panels</li>
+        <li>Social events</li>
+        <li>Venue &amp; rooms</li>
+        <li>Local guide</li>
+        <li>Committees &amp; patrons</li>
+      </ul>
+    </div>
+  </section>
+
+  <nav class="links">
+    <a href="https://smartgridcomm2026.github.io/SmartGridComm-2026-Program/">
+      <b>Interactive Program →</b>
+      <span>Full schedule with every session, paper, and room.</span>
+    </a>
+    <a href="https://sgc2026.ieee-smartgridcomm.org/">
+      <b>Conference Website →</b>
+      <span>sgc2026.ieee-smartgridcomm.org</span>
+    </a>
+  </nav>
+</main>
+
+<footer>IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids</footer>
+</body>
+</html>
